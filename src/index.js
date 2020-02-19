@@ -8,17 +8,9 @@ var style = {
     fontFamily: 'Arial'
 }
 
-const title = React.createElement(
-    'h1',
-    {id: 'title', className: 'header', style: style},
-    React.createElement(
-        'h1',
-        {},
-        'Hello World'
-    )
-)
-
 ReactDOM.render(
-    title,
+    <div style={style}>
+        <h1>Hello World</h1>
+    </div>,
     document.getElementById('root')
 )
